@@ -1,0 +1,281 @@
+﻿body
+{
+	background-image: url(./Imagenes/background.jfif) ;
+	border-left: transparent 50px solid;
+	border-right: transparent 50px solid;
+	font-family: parrafo
+}
+
+@font-face{
+	font-family: Titulo;
+	src: url('./Fuentes/Oswald/static/Oswald-Bold.ttf');
+}
+
+@font-face{
+	font-family: parrafo;
+	src: url('./Fuentes/Source_Sans_Pro/SourceSansPro-Regular.ttf');
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+  }
+  
+  nav{
+	background: #AA0505;
+	height: 80px;
+	width: 100%;
+  }
+  label.stroke{
+	color:#6A0C0B;
+	font-size: 50px;
+	line-height: 80px;
+	padding: 0 100px;
+	font-weight: bold;
+	font-family: 'Titulo';
+  }
+  nav ul{
+	float: right;
+	margin-right: 20px;
+  }
+  nav ul li{
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+  }
+  nav ul li a{
+	color: white;
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+  }
+  a.active,a:hover{
+	background: #6A0C0B;
+	transition: .5s;
+  }
+  .checkbtn{
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+  }
+  #check{
+	display: none;
+  }
+  @media (max-width: 952px){
+	label.logo{
+	  font-size: 30px;
+	  padding-left: 50px;
+	}
+	nav ul li a{
+	  font-size: 16px;
+	}
+  }
+  @media (max-width: 858px){
+	.checkbtn{
+	  font-size: 30px;
+	  color: white;
+	  float: right;
+	  line-height: 80px;
+	  margin-right: 40px;
+	  cursor: pointer;
+	  display: none;
+	}
+	ul{
+	  position: fixed;
+	  width: 100%;
+	  height: 100vh;
+	  background: #2c3e50;
+	  top: 80px;
+	  left: -100%;
+	  text-align: center;
+	  transition: all .5s;
+	}
+	nav ul li{
+	  display: block;
+	  margin: 50px 0;
+	  line-height: 30px;
+	}
+	nav ul li a{
+	  font-size: 20px;
+	}
+	a:hover,a.active{
+	  background: none;
+	  color: #0082e6;
+	}
+	#check:checked ~ ul{
+	  left: 0;
+	}
+  }
+
+header{
+	text-align: center;
+	filter: drop-shadow(0 0 10px #B97D10);
+}
+
+.stroke {
+	text-shadow: -1px -1px 1px #B97D10, 2px 2px 1px #B97D10, -1px 1px 1px #B97D10, 1px -1px 1px #B97D10;
+	}
+
+h1.stroke{
+	text-align: left;
+	text-decoration:blink;
+	font-family: 'Titulo';
+	color: #AA0505;
+	font-size: 6vh;
+	
+}
+
+p{
+	font-family: 'parrafo';
+	font-size: large;
+	text-align: justify;
+	color: #ffffff;
+	margin: 25px;
+}
+
+.contenedor{
+    position: relative;
+    display: inline-block;
+	text-align: justify;
+	width:48%;
+	filter: drop-shadow(0 0 10px #B97D10);
+	margin: auto;
+}
+
+.textoFull{
+    top: 20px;
+	left: 20px;
+	font-family: 'parrafo';
+	font-size: large;
+	color: #ffffff;
+	background-color: #6A0C0B;
+	text-align: justify;
+	padding: 5%;
+}
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.multimedia{
+	text-align: center;
+	width: 48%;
+	float:right;
+	align-content: center;
+	vertical-align: center;
+	margin: auto;
+	margin-top: 0px;
+	filter: drop-shadow(0 0 10px #B97D10);
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.multimediaLeft{
+	text-align: center;
+	width: 48%;
+	margin: auto;
+	float:left;
+	align-content: center;
+	margin-top: 5px;
+	filter: drop-shadow(0 0 10px #6A0C0B);
+
+}
+
+.bloque{
+	width: 48%;
+	margin: auto;
+	text-align: center;
+	float:right;
+	margin-top: 5px;
+	filter: drop-shadow(0 0 10px #6A0C0B);
+}
+
+.texto{
+    top: 20px;
+	left: 20px;
+	font-family: 'parrafo';
+	font-size: large;
+	color: #ffffff;
+	background-color: #B97D10;
+	text-align: justify;
+	padding: 3%;
+}
+
+/*#IM2{
+	text-align: center;
+	height: auto;
+	width: 90%;
+}*/
+
+h5{
+	font-family: 'parrafo';
+	text-align:right;
+	color: #ffffff;
+}
+
+#StarkIndustries{
+	padding: 3%;
+	
+}
+
+#IML{
+	text-align: center;
+}
+
+table {     
+	font-family: "parrafo";
+    font-size: large;
+	margin: 45px;
+	text-align: justify;
+	border-collapse: collapse; 
+}
+
+
+th {     
+	font-size: x-large;          
+	padding: 8px;     
+	background: #B97D10;   
+	border-bottom: 2px solid black; 
+	border-left: 2px solid black;
+	color: whitesmoke; 
+}
+
+td {    
+	padding: 8px;     
+	background: #6A0C0B;     
+	border-bottom: 2px solid black;
+	border-left: 2px solid black;
+    color: white;
+	border-top: 1px solid transparent; 
+}
+
+tr:hover td { 
+	background: #8f2b29;
+	color:whitesmoke;
+}
+
+.pelicula1{
+	filter: drop-shadow(0 0 10px #B97D10);
+	padding:20px;
+	
+}
+
+.pelicula2{
+	filter: drop-shadow(0 0 10px #AA0505);
+}
+
+.elementosMultimedia{
+	width: 95%;
+	text-align: center;
+}
+
